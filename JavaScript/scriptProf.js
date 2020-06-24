@@ -57,7 +57,7 @@ var professores = [
     },
     professor12 = {
         foto: '../imagens/professores/prof12.jpg',
-        nome: 'ERIK MARÇAL',
+        nome: 'ERIK MARÇAli',
         matéria: 'NETWORKIG',
     }
 ];
