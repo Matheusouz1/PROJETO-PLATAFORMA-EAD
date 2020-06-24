@@ -1,0 +1,838 @@
+/*  definições padrão*/
+/* @font-face
+{
+    font-family: 'FontPadrão';
+    src: url("../fonts/arial-rounded-mt-bold.ttf");
+} */
+
+*
+{
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+/* fim das definições padrão */
+
+.wppIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2rem;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    z-index: 100;
+    text-decoration: none;
+    
+    
+}
+.wppIcon p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 10px;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    padding-bottom: 6px;
+}
+.wppIcon img {
+    width: 65px;
+    height: 65px;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    
+}
+.wppIcon :hover {
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease;
+}
+
+
+/*Apresentação do site = primeira sessão */
+#apresentacao_EAD
+{
+    background: url("../imagens/background1.png") no-repeat center center / cover;
+    width: 100%;
+    height: 670px;
+    
+}
+/* fim da apresentação do site = primeira sessão */
+
+
+/* barra de navegação  */
+.menu_flex_header 
+{
+    background: rgba(41, 21, 107, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 73px;
+    position: fixed;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    top: 0;
+}
+
+.menu_flex_header .material-icons
+{
+    color: white;
+    display: none;
+}
+
+.menu_flex_header .logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.menu_flex_header .logo a img
+{
+    width: 250px;
+}
+/* fim da barra de navegação  */
+
+
+/* ajustes de menu */
+.menu_flex_header .menu
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.menu ul
+{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+}
+
+.menu ul li
+{
+    display: inline;
+    text-decoration: none;
+}
+
+.menu ul li a
+{
+    font-size: 12pt;
+    padding: 2px 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul .list_border a 
+{
+    border: 1.3px solid white;
+    border-radius: 10px;
+    font-size: 13pt;
+}
+
+.menu ul .list_border a:hover
+{
+    border: 1.3px solid white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 62px -2px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 0px 62px -2px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 62px -2px rgba(0, 0, 0, 0.68);
+    
+}
+
+.menu ul li :hover
+{
+    background-color: white;
+    color:#7159C1;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 16px 55px -11px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 16px 55px -11px rgba(0,0,0,1);
+    box-shadow: 0px 16px 55px -11px rgba(0,0,0,1);
+
+}
+/* fim dos ajustes de menu */
+
+/* ajuste da foto dos professores */
+#container-foto-prof
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position:absolute;
+    width: 100%;
+    height: 670px;
+}
+
+#container-foto-prof img
+{
+    width: 60%;
+}
+
+/* fim ajustes foto dos professores */
+
+/* ajustes titulo primeira sessão */
+.container_texto_primeira_sessao
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 670px;
+    margin-left: 40px;
+}
+
+.container_texto_primeira_sessao h1 
+{
+    color: white;
+    font-size: 40pt;
+}
+
+.container_texto_primeira_sessao h3
+{
+    font-size: 46pt;
+    padding-top: 10px;
+    color: #7ad887;
+}
+
+.container_texto_primeira_sessao p{
+    font-size: 20pt;
+    color: white;
+}
+.container_texto_primeira_sessao button{
+    background-color:#7ad887;
+    outline: none;
+    border: none;
+    margin: 30px 0px 0px 8%;
+    padding: 5px 15px;
+    color: white;
+    font-size: 20pt;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.container_texto_primeira_sessao button:hover
+{
+    background-color:#70ca7c;
+    -webkit-box-shadow: 0px 16px 22px -11px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 16px 22px -11px rgba(0,0,0,0.62);
+    box-shadow: 0px 16px 22px -11px rgba(0,0,0,0.62);
+    transition: all .4s ease-in-out;
+}
+/* fim ajustes titulo da primeira sessão */
+/* fim da primeira sessão */
+
+
+
+/* inicio da segunda sessão */
+section 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0px 100px 0px;
+}
+
+.title_section 
+{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    font-size: 17pt;
+    padding-bottom: 30px;
+}
+
+.title_section span
+{
+    color:#7159C1;
+    margin-right: 20px;
+}
+
+.title_section h2
+{
+    color: #7159C1;
+}
+
+
+/* ajuste de cards "O que nos move" */
+.containermaior
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.cardscontainer
+{
+    display: flex;
+    margin: 25px 0px 25px 0px; 
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px; 
+    margin: 0px 12px;
+    transition: all .7s ease-in-out;
+}
+
+.img_top_card
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img_top_card img
+{
+    width: 60px;
+    margin: 40px 0px 16px 0px; 
+}
+
+.title_card
+{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cards p 
+{
+    text-align:center;
+    margin: 0px 25px 20px 25px;
+    transition: all .9s ease-in-out;
+}
+
+.cards:hover
+{
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.45);
+    transition: all .7s ease-in-out;
+}
+
+/* fim ajuste de card "o que nos move" */
+
+
+/* ajustes video metodologia */
+.section2
+{   
+    background-image: url(../imagens/background1.png);
+    width: 100%;
+    height: 600PX;
+    padding: 30px 0px 60px 0px;
+}
+
+.title_section2
+{
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.title_section2 h2 span
+{
+    text-align: center;
+    color: white;
+}
+
+.video
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px 0px 0px;
+}
+
+.subtitle_section
+{   display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 18pt;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.container-video
+{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.mockuptela
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 478.7px;
+    max-width: 600px;
+}
+
+.imac
+{
+    width: 96%;
+    max-width: 600px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    
+}
+
+.botao_play
+{
+    position: relative;
+    width: 25%;
+    transition: all .3s ease-in-out;
+    margin-top: 20%;
+}
+
+.capa_video_metodologia
+{
+    position: absolute;
+    width: 88%;
+    max-width: 560px;  
+    margin-top: 25px; 
+}
+
+/* ajustes de janela de video */
+
+#background-video-metd-preto{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9999;
+}
+
+#background-video-metd-preto .fechar 
+{   width: 650px;
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+#background-video-metd-preto img 
+{   
+    position: relative;
+    top: 39px;
+    right: 50px;
+    width: 25px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#background-video-metd-preto #video-metodologia
+{
+    
+    width: 560px;
+    outline: none;
+    
+}
+
+/* fim de justes de metodologia */
+
+/* inicio da sessão nossos professores */
+.container_mentor
+{
+    width: 100%;
+    height: 100%;
+}
+
+.title_section3
+{
+    text-align: center;
+    color: #7159C1;
+}
+
+.title_section3 h4
+{
+    margin: 20px 0;
+    color: rgb(113, 89, 193);
+}
+
+.title_section3 h2
+{
+    font-size: 25pt;
+    margin-bottom: 30px;
+}
+
+.title_section3 p 
+{
+    font-size: 15pt;
+    margin-bottom: 45px;
+}
+
+/* card padrao */
+.section_card_mentor 
+{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.card_format
+{   
+    width: 200px;
+    height: 330px;
+    margin: 17px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    /* box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.65); */
+    transition: all .5s ease-in-out;
+
+}
+.card_format:hover
+{
+    box-shadow: -0px 0px 15px 0px rgba(0,0,0,0.85);
+    transition: all .5s ease-in-out;
+    margin: 10px 10px 17px 10px;
+}
+
+.img_mentor
+{
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Linha_divisao
+{
+    width: 100%;
+    height: 10px;
+    background: rgb(232,148,250);
+    background: linear-gradient(90deg, rgba(232,148,250,1) 0%,
+    rgba(216,149,217,1) 44%, rgba(113,89,193,1) 100%);
+}
+.barra-de-titulos 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 91px;
+}
+
+.barra-de-titulos h4
+{
+    color: white;
+    padding: 25px 10px 5px;
+    
+}
+.barra-de-titulos h6
+{
+    color: white;
+    padding: 0px 10px;
+}
+
+/* fim da sessão dos professores */
+
+/* inicio da sessão de garantia */
+
+.section-garantia
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/background1.png);
+    padding: 80px 0px;
+}
+
+.container-garantia
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(255, 255, 255) ;
+    width: 85%;
+    max-width: 800px;
+    border-radius: 30px;
+    box-shadow: -10px 15px 30px 0px rgb(0, 0, 0, 0.25);
+
+}
+
+.container-garantia h4
+{
+    margin-top: 40px;
+    color: #8a2be2;
+}
+
+.container-garantia .txt-garantia span
+{
+    color: #f20774;
+}
+
+.txt-garantia
+{
+    margin-bottom: 30px;
+}
+
+.container-garantia h2
+{
+    color: #8a2be2;
+    padding: 10px 30px 30px 30px;
+    font-size: 30pt;
+}
+
+.container-garantia p
+{
+    text-align: center;
+    color: #8a2be2;
+    margin: 0px 50px;
+    font-size: 20pt;
+}
+.container-garantia button
+{
+    margin: 60px 0px 55px 0px;
+    border: none;
+    background: none;
+    transition: all .5s ease-in-out;
+}
+
+.container-garantia button:hover
+{
+    margin: 55px 0px 60px 5px;
+    border: none;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.container-garantia button a
+{
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: blueviolet;
+    border: solid 3px #8a2be2;
+    font-size: 15pt;
+    border-radius: 20px;
+    padding: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.container-garantia button a:hover
+{
+    box-shadow: -15px 15px 15px 0px rgba(0,0,0,0.35);
+    transition:  background-color color .2s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
+    background-color: blueviolet;
+    color: white;
+}
+
+/* FAQ */
+.faqcontainer
+{
+	display: flex;
+    justify-content: center;
+}
+
+.colunaFAQ
+{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 30%;
+	margin: 10px 10px;
+}
+
+.colunaFAQ h3
+{
+    color:blueviolet;
+    font-size: 100%;
+}
+
+.containerPergunta
+{
+	display: flex;
+    flex-direction: column;
+    background: rgb(138, 43, 226, 0.1);
+	border: solid 2px blueviolet;
+	margin: 10px 15px; 
+    width: 100%;
+    border-radius: 10px;
+}
+
+.perguntaFAQ
+{   
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px ;
+	color: blueviolet;
+    font-size: 15pt;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+}
+
+.perguntaFAQ .material-icons
+{
+    margin-left: auto;
+}
+.perguntaFAQ:hover
+{
+    background: rgb(138, 43, 226) ;
+    color: white;
+    border-radius: 6px;
+    
+}
+
+.respostasFAQ
+{
+    color: blueviolet;
+    word-break: break-word;
+    line-height: 1.5;
+    padding: 15px 0px;
+    margin: 0px 20px;
+    border-top: solid 2px blueviolet;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+/* roda pé */
+
+
+.roda_pe 
+{
+    background-image: url('../imagens/background1.png');
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.coluna-containerRodape1
+{
+    width: 30%
+}
+
+.coluna-containerRodape1 img
+{
+    width: 50%;
+    margin-bottom: 20px ;
+}
+.coluna-containerRodape1 p
+{
+    word-break: break-word;
+    
+    width: 90%;
+    margin-top: 20px;
+    color: white;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.coluna-containerRodape2
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-Rodape
+{
+    display: flex;
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.link-rodaPe
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.link-rodaPe ul 
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100px;
+    font-size: 13px;
+}
+.link-rodaPe ul li
+{
+   height: 2rem;
+   width: 150px;
+   align-items: center;
+   display: flex;
+
+}
+.link-rodaPe ul li a
+{   
+    color: white;
+    
+}
+
+.link-rodaPe .icons-RS
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.link-rodaPe img 
+{
+    width: 35px;
+    margin: 0px 5px;
+}
+
+.INFO 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 80%;
+    color: white;
+    font-size: 11px;
+}
+
+#cancelMenu{display: none;}
+/* icone menu */
+.menu_flex_header .material-icons
+{
+    color: white;
+    display: none;
+    margin-left: auto;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    
+}

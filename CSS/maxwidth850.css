@@ -1,0 +1,182 @@
+.menu_flex_header
+{
+    display: flex;
+    position: relative;
+    height: 73PX;
+    
+}
+#cancelMenu{display: none;}
+/* icone menu */
+.menu_flex_header .material-icons
+{
+    color: white;
+    display: initial;
+    margin-left: auto;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    
+}
+
+.menu_flex_header .menu
+{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: white;
+    border-radius: 15px;
+    height: 200px;
+    width: 95%;
+    position:absolute;
+    top: 73px;
+    margin-right: auto;
+    box-shadow: 0px 1px 5px 2px rgb(0, 0, 0, 0.35);
+    transition: all 0.5s ease;
+}
+
+.menu_flex_header .menu ul
+{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.menu_flex_header .menu ul li
+{
+    padding: 10px 0px;
+}
+
+.menu_flex_header .menu ul li a
+{
+    color: blueviolet;
+}
+
+.menu_flex_header .menu ul li a:hover {
+    color: black;
+    box-shadow: none;
+    
+}
+/* logo */
+.menu_flex_header .logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+/* ajustes de prof */
+#container-foto-prof
+{
+    display: none;
+}
+
+/* ajuste de titulo 1 sessão*/
+
+#apresentacao_EAD
+{
+    display: flex;
+    flex-direction: column;
+    background: url("../imagens/background1.png") no-repeat center center / cover;
+    width: 100%;
+    height: 550px;
+    
+}
+.container_texto_primeira_sessao
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.container_texto_primeira_sessao h1 
+{
+    justify-content: center;
+    color: white;
+    font-size: 37pt;
+    width: 95%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.container_texto_primeira_sessao .qtalunos
+{
+    display: flex;
+    align-items: center;
+}
+.container_texto_primeira_sessao  h3
+{
+    margin: 0 20px 0px 0px;
+    padding: 0;
+    font-size: 50pt;
+}
+.container_texto_primeira_sessao p
+{
+    text-align: center;
+}
+.container_texto_primeira_sessao button
+{
+    margin: 30px 0px;
+}
+
+/* box garantia */
+.container-garantia h2
+{
+    text-align: center;
+    font-size: 25pt;
+}
+
+.container-garantia p
+{
+    font-size: 15pt;    
+}
+
+/* ajuste de FAQ */
+.faqcontainer
+{
+    flex-direction: column;
+    align-items: center;
+}
+.faqcontainer .colunaFAQ
+{
+    width: 90%;
+}
+
+
+/* ajuste de roda pe */
+.roda_pe
+{
+    flex-direction: column;
+    align-items: center;
+}
+.roda_pe .coluna-containerRodape1
+{
+    width: 90%;
+}
+.roda_pe .coluna-containerRodape1 p
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.roda_pe .coluna-containerRodape2
+{
+    width: 90%;
+}
+.link-rodaPe
+{
+
+}
+
